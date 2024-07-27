@@ -1,0 +1,38 @@
+.bergur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: black;
+  transition: all 350ms ease-out;
+  cursor: pointer;
+}
+
+.bergur::before,
+.bergur::after {
+  content: "";
+  width: 35px;
+  height: 1.5px;
+  position: absolute;
+  background: white;
+  transition: all 350ms ease-out;
+  will-change: transform;
+}
+
+.bergur::before {
+  transform: translateY(-3px);
+}
+.bergur::after {
+  transform: translateY(3px);
+}
+
+.active.bergur::before {
+  transform: translateY(0) rotate(45deg);
+}
+.active.bergur::after {
+  transform: translateY(0) rotate(-45deg);
+}
