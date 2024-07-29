@@ -10,6 +10,7 @@ const PageTitle = ({ title }) => {
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
+
     gsap
       .timeline({
         scrollTrigger: {
@@ -21,7 +22,7 @@ const PageTitle = ({ title }) => {
       })
       .to(heroText.current, {
         alpha: 0,
-        yPercent: 60,
+        yPercent: 50,
       });
   });
 

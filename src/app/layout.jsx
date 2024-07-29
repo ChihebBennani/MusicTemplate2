@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Navigation } from "./components/Navigation";
 import Locomotive from "./components/Locomotive";
+import GsapScrollTrigger from "./components/GsapScrollTrigger";
 
 const myFont = localFont({ src: "../../public/SaansTRIAL-Regular.ttf" });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={myFont.className}>
         <Locomotive />
+        <GsapScrollTrigger />
         <Navigation />
         <main className="w-full h-full pt-20">{children}</main>
       </body>

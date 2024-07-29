@@ -50,7 +50,7 @@ const HeroSection = () => {
   return (
     <section
       ref={container}
-      className="w-full bg-zinc-900 flex h-[220vh] md:h-[250vh] overflow-hidden"
+      className="w-full bg-zinc-900 flex h-[240vh] md:h-[250vh] overflow-hidden"
     >
       <div
         ref={colum1}
@@ -187,7 +187,7 @@ const HeroSection = () => {
       </div>
       <div
         ref={colum4}
-        className="h-full w-full flex-1 bg-inherit flex flex-col items-center  hidden 2xl:block"
+        className="h-full w-full flex-1 bg-inherit flex-col items-center  hidden 2xl:block"
       >
         <div className="relative aspect-[9/14] ">
           <video
