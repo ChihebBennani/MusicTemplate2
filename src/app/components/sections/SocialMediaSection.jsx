@@ -1,21 +1,12 @@
 "use client";
 
-import { useGSAP } from "@gsap/react";
 import { IconHandFinger } from "@tabler/icons-react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import React, { useRef } from "react";
 
 const SocialMediaSection = () => {
-  const socialContainer = useRef();
-
   return (
-    <div
-      ref={socialContainer}
-      className="px-6 py-10 flex flex-col items-center justify-center gap-6 text-center md:gap-8 lg:gap-10 lg:py-16"
-    >
-      <div className="social-title">
+    <div className="px-6 py-10 flex flex-col items-center justify-center gap-6 text-center md:gap-8 lg:gap-10 lg:py-20">
+      <div>
         <h3 className="font-bold text-3xl md:text-5xl lg:text-7xl">
           Social media management
         </h3>
@@ -37,7 +28,12 @@ const SocialMediaSection = () => {
 
       <div className="w-full flex items-center justify-around gap-8 flex-col md:flex-row px-2 xl:px-10 my-10">
         <div className="relative w-full h-full aspect-[9/12]">
-          <Image src="/img/social/Social1.jpg" fill className="object-cover" />
+          <Image
+            src="/img/social/Social1.jpg"
+            fill
+            className="object-cover"
+            alt="social"
+          />
           <div className="w-full h-full bg-zinc-900/30 absolute grid place-items-center">
             <div className="flex flex-col gap-4 items-center justify-center">
               <IconHandFinger stroke={1} className="text-zinc-100 w-14 h-1/4" />
@@ -46,7 +42,12 @@ const SocialMediaSection = () => {
           </div>
         </div>
         <div className="relative w-full h-full aspect-[9/12]">
-          <Image src="/img/social/Social2.jpg" fill className="object-cover" />
+          <Image
+            src="/img/social/Social2.jpg"
+            fill
+            className="object-cover"
+            alt="social"
+          />
           <div className="w-full h-full bg-zinc-900/30 absolute grid place-items-center">
             <div className="flex flex-col gap-4 items-center justify-center">
               <IconHandFinger stroke={1} className="text-zinc-100 w-14 h-1/4" />
@@ -55,7 +56,12 @@ const SocialMediaSection = () => {
           </div>
         </div>
         <div className="relative w-full h-full aspect-[9/12]">
-          <Image src="/img/social/Social3.jpg" fill className="object-cover" />
+          <Image
+            src="/img/social/Social3.jpg"
+            fill
+            className="object-cover"
+            alt="social"
+          />
           <div className="w-full h-full bg-zinc-900/30 absolute grid place-items-center">
             <div className="flex flex-col gap-4 items-center justify-center">
               <IconHandFinger stroke={1} className="text-zinc-100 w-14 h-1/4" />

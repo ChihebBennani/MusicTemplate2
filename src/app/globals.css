@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply h-screen text-zinc-900 bg-zinc-100;
+  @apply h-full text-zinc-900 bg-zinc-100;
 }
 
 body::-webkit-scrollbar {

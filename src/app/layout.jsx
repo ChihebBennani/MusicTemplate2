@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navigation } from "./components/Navigation";
 import Locomotive from "./components/Locomotive";
 import GsapScrollTrigger from "./components/GsapScrollTrigger";
+import Footer from "./components/Footer";
 
 const myFont = localFont({ src: "../../public/SaansTRIAL-Regular.ttf" });
 
@@ -14,11 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={myFont.className}>
+      <body data-scroll-container className={myFont.className}>
         <Locomotive />
         <GsapScrollTrigger />
         <Navigation />
         <main className="w-full h-full pt-20">{children}</main>
+        <Footer />
       </body>
     </html>
   );

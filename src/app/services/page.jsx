@@ -1,7 +1,12 @@
 import React from "react";
+import PageTitle from "../components/PageTitle";
 
 const page = () => {
-  return <div className="grid place-items-center h-full">Services</div>;
+  return (
+    <>
+      <PageTitle title="What We can do for You" />
+    </>
+  );
 };
 
 export default page;

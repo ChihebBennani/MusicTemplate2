@@ -22,12 +22,11 @@ const PageTitle = ({ title }) => {
       })
       .to(heroText.current, {
         alpha: 0,
-        yPercent: 50,
       });
   });
 
   return (
-    <section className="grid place-items-center w-full h-full relative">
+    <section className="flex items-center justify-center w-full h-[calc(100dvh-80px)]">
       <div ref={heroText} className="flex flex-col items-center px-10 gap-10">
         <h1 className="text-wrap text-5xl md:text-7xl lg:text-9xl text-center font-bold leading-snug w-full">
           {title}
