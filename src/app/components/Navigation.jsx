@@ -72,7 +72,7 @@ export const Navigation = () => {
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, controlNavbar, show]);
 
   useEffect(() => {
     if (isMenuOpen) {

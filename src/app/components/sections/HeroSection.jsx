@@ -104,7 +104,7 @@ const HeroSection = () => {
       </div>
       <div
         ref={colum2}
-        className="h-full w-full flex-1 bg-inherit flex-col items-center hidden md:block translate-y-[25%]"
+        className="h-full w-full flex-1 bg-inherit flex-col items-center hidden md:block invisible md:visible translate-y-[25%]"
       >
         <div className="relative aspect-square ">
           <Image
@@ -145,7 +145,7 @@ const HeroSection = () => {
       </div>
       <div
         ref={colum3}
-        className="h-full w-full flex-1 bg-inherit flex-col items-center  hidden lg:block translate-y-[10%]"
+        className="h-full w-full flex-1 bg-inherit flex-col items-center hidden lg:block invisible lg:visible translate-y-[10%]"
       >
         <div className="relative aspect-[9/16]">
           <video
@@ -166,7 +166,7 @@ const HeroSection = () => {
           />
         </div>
         <div className="py-12 font-bold text-4xl md:text-5xl lg:text-7xl space-y-1.5 text-zinc-100 flex flex-col items-start px-5 justify-center w-full">
-          <p>On en parle autour d'un café ?</p>
+          <p>On en parle autour d&apos;un café ?</p>
         </div>
         <div className="relative aspect-[9/16] overflow-hidden">
           <Image
@@ -187,7 +187,7 @@ const HeroSection = () => {
       </div>
       <div
         ref={colum4}
-        className="h-full w-full flex-1 bg-inherit flex-col items-center  hidden 2xl:block"
+        className="h-full w-full flex-1 bg-inherit flex-col items-center hidden 2xl:block invisible 2xl:visible"
       >
         <div className="relative aspect-[9/14] ">
           <video
