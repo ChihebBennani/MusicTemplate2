@@ -1,7 +1,7 @@
 export const menuLinks = [
   { path: "/", lable: "HOME" },
-  { path: "/work", lable: "WORK" },
-  { path: "/about", lable: "ABOUT" },
+  { path: "/agence", lable: "L ’AGENCE" },
+  { path: "/projects", lable: "PROJECTS" },
   { path: "/services", lable: "SERVICES " },
 ];
 
@@ -13,12 +13,42 @@ export const socialLinks = [
 ];
 
 export const team = [
-  { firstName: "#Sébastien", lastName: "Alvarez", imageUrl: "/img/team1.jpg" },
-  { firstName: "Olivia", lastName: "Bluzet", imageUrl: "/img/team2.jpg" },
-  { firstName: "Estelle", lastName: "MarratcheX", imageUrl: "/img/team3.jpg" },
-  { firstName: "Audrey", lastName: "Laporte", imageUrl: "/img/team4.jpg" },
-  { firstName: "Alexane", lastName: "Lebreton", imageUrl: "/img/team5.jpg" },
-  { firstName: "Mathias", lastName: "Teissier", imageUrl: "/img/team6.jpg" },
+  {
+    firstName: "Sébastien",
+    lastName: "Alvarez",
+    imageUrl: "/img/team/team1.jpg",
+    description: "Social media manager",
+  },
+  {
+    firstName: "Olivia",
+    lastName: "Bluzet",
+    imageUrl: "/img/team/team2.jpg",
+    description: "Social media manager",
+  },
+  {
+    firstName: "Estelle",
+    lastName: "MarratcheX",
+    imageUrl: "/img/team/team3.jpg",
+    description: "Social media manager",
+  },
+  {
+    firstName: "Audrey",
+    lastName: "Laporte",
+    imageUrl: "/img/team/team4.jpg",
+    description: "Social media manager",
+  },
+  {
+    firstName: "Alexane",
+    lastName: "Lebreton",
+    imageUrl: "/img/team/team5.jpg",
+    description: "Social media manager",
+  },
+  {
+    firstName: "Mathias",
+    lastName: "Teissier",
+    imageUrl: "/img/team/team6.jpg",
+    description: "Social media manager",
+  },
 ];
 
 export const quotes = [
@@ -59,3 +89,5 @@ export const quotes = [
     starts: 5,
   },
 ];
+
+export const projects = [];

@@ -17,7 +17,7 @@ const QuotesSection = () => {
           Ils nous font confiance
         </h3>
       </div>
-      <div className="logos">
+      <div className="logos my-10">
         <ul className="logos-slide">
           <li>
             <img src="/img/quotes/slider1.svg" alt="company" />
@@ -90,8 +90,9 @@ const QuotesSection = () => {
           slidesPerView={3}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 4000,
           }}
+          grabCursor
           modules={[Autoplay]}
           breakpoints={{
             320: {
