@@ -5,8 +5,8 @@ import ProjectSliderSection from "../components/sections/ProjectSliderSection";
 const page = () => {
   return (
     <>
-      <PageTitle title="Our Story" />
-      {/* <ProjectSliderSection /> */}
+      {/* <PageTitle title="Our Projects" /> */}
+      <ProjectSliderSection />
     </>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import "./NavigationStyles.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -45,14 +45,14 @@ export const Navigation = () => {
       );
   });
 
-  const controlNavbar = () => {
+  const controlNavbar = useCallback(() => {
     if (window.scrollY > lastScrollY) {
       setShow(false);
     } else {
       setShow(true);
     }
     setLastScrollY(window.scrollY);
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     window.addEventListener("scroll", controlNavbar);

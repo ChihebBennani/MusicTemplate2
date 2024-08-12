@@ -90,4 +90,82 @@ export const quotes = [
   },
 ];
 
-export const projects = [];
+export const projects = [
+  {
+    title: "MINI Society",
+    owner: "Rallye Montpellier",
+    description: "PRODUCTION - READY FOR USE - EVENT",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider1.jpg",
+  },
+  {
+    title: "France Galop",
+    owner: "Grands Prix & Événements",
+    description: "PRODUCTION - READY FOR USE - EVENT",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider2.jpg",
+  },
+  {
+    title: "Bioderma",
+    owner: "Campagne hygiène Atoderm",
+    description: "PRODUCTION - READY FOR USE - BRAND CONTENT",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider3.jpg",
+  },
+  {
+    title: "Renault",
+    owner: "Campagne Lifestyle Megane Renault",
+    description: "PRODUCTION - READY FOR USE - BRAND CONTENT",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider4.jpg",
+  },
+  {
+    title: "Accor",
+    owner: "Campagne Lifestyle Sofitel scribe",
+    description: "PRODUCTION - READY FOR USE - BRAND CONTENT",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider5.jpg",
+  },
+  {
+    title: "France Galop",
+    owner: "Grand Steeple-Chase de Paris",
+    description: "PRODUCTION - TAILOR MADE",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider6.jpg",
+  },
+  {
+    title: "D-Link",
+    owner: "Aaaaaah",
+    description: "PRODUCTION - TAILOR MADE",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider7.jpg",
+  },
+  {
+    title: "Schneider",
+    owner: "Ev Link Customer Success Story",
+    description: "PRODUCTION - TAILOR MADE",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider8.jpg",
+  },
+  {
+    title: "Rogervoice",
+    owner: "Rallye Montpellier",
+    description: "SOCIAL MEDIA MANAGEMENT",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider9.jpg",
+  },
+  {
+    title: "Aiways",
+    owner: "Rallye Montpellier",
+    description: "SOCIAL MEDIA MANAGEMENT",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider10.jpg",
+  },
+  {
+    title: "D-Lin Social",
+    owner: "Rallye Montpellier",
+    description: "SOCIAL MEDIA MANAGEMENT",
+    buttonTitle: "voir",
+    imageUrl: "/img/sliders/slider11.jpg",
+  },
+];

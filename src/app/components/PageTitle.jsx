@@ -26,7 +26,7 @@ const PageTitle = ({ title }) => {
   });
 
   return (
-    <section className="flex items-center justify-center w-full h-[calc(100dvh-80px)]">
+    <section className="flex items-center justify-center w-full h-[calc(100vh-80px)]">
       <div ref={heroText} className="flex flex-col items-center px-10 gap-10">
         <h1 className="text-wrap text-5xl md:text-7xl lg:text-9xl text-center font-bold leading-snug w-full">
           {title}

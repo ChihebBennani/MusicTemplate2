@@ -12,7 +12,7 @@
     "@gsap/react": "^2.1.1",
     "@tabler/icons-react": "^3.11.0",
     "gsap": "^3.12.5",
-    "locomotive-scroll": "^5.0.0-beta.13",
+    "lenis": "^1.1.9",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",

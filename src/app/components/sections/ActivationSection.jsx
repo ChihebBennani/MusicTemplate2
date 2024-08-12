@@ -27,7 +27,7 @@ const ActivationSection = () => {
             alt="hero2"
           />
           <div className="absolute top-3/4 md:top-1/2 left-1/2 md:left-0 h-auto w-[35vw] md:w-[15vw] -translate-y-1/2 -translate-x-1/2">
-            <div data-scroll data-scroll-speed="0.3">
+            <div>
               <video
                 className="object-cover w-full h-full object-center"
                 loop
