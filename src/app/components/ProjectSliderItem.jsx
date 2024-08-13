@@ -16,11 +16,15 @@ const ProjectSliderItem = ({
         alt={owner}
         className="img-container object-cover object-center"
       />
-      <div className="absolute top-1/2 left-0 -translate-y-1/2">
-        <h2>{title}</h2>
-        <h3>{owner}</h3>
-        <h4>{description}</h4>
-        <button>{buttonTitle}</button>
+      <div className="w-full h-full bg-zinc-900/20 absolute">
+        <div className="absolute bottom-32 left-0 text-zinc-100 px-6 flex flex-col md:px-20">
+          <h2 className="text-5xl font-bold lg:text-8xl pb-2">{title}</h2>
+          <h3 className="font-semibold text-xl lg:text-2xl pb-1">{owner}</h3>
+          <h4 className="text-lg lg:text-xl text-zinc-200">{description}</h4>
+          <button className="bg-zinc-100 text-zinc-900 w-full py-1 text-lg mt-3 font-semibold lg:text-xl">
+            {buttonTitle}
+          </button>
+        </div>
       </div>
     </section>
   );

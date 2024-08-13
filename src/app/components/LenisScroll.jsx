@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactLenis } from "lenis/react";
+import ReactLenis from "@studio-freight/react-lenis";
 
 const LenisScroll = ({ children }) => {
   return (
@@ -9,7 +9,7 @@ const LenisScroll = ({ children }) => {
       options={{
         lerp: 0.08,
         smoothWheel: true,
-        // syncTouch: true,
+        syncTouch: true,
       }}
     >
       {children}

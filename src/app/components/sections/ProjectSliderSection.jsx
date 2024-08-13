@@ -1,17 +1,22 @@
 "use client";
 
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { projects } from "@/app/utils/constants";
 import ProjectSliderItem from "../ProjectSliderItem";
 import "swiper/css";
 import PageTitle from "../PageTitle";
 import { Mousewheel, Parallax } from "swiper/modules";
-import { useLenis } from "lenis/react";
-import Footer from "../Footer";
+import { useLenis } from "@studio-freight/react-lenis";
 
 const ProjectSliderSection = () => {
+  const [swiperMounted, setSwiperMounted] = useState(false);
+
   const lenis = useLenis();
+
+  if (swiperMounted) {
+    lenis.stop();
+  }
 
   return (
     <Swiper
@@ -30,12 +35,15 @@ const ProjectSliderSection = () => {
 
           imgContainer?.setAttribute(
             "data-swiper-parallax",
-            0.5 * swiper.height
+            0.75 * swiper.height
           );
           imgContainer?.setAttribute("data-swiper-parallax-opacity", 0.5);
         }
+        setSwiperMounted(true);
       }}
       onSlideChange={(swiper) => {
+        console.log(swiper);
+
         if (swiper.hostEl.getBoundingClientRect().top === 80) {
           lenis.stop();
         } else {

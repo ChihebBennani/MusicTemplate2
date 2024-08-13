@@ -162,7 +162,7 @@ export const projects = [
     imageUrl: "/img/sliders/slider10.jpg",
   },
   {
-    title: "D-Lin Social",
+    title: "D-Link Social",
     owner: "Rallye Montpellier",
     description: "SOCIAL MEDIA MANAGEMENT",
     buttonTitle: "voir",

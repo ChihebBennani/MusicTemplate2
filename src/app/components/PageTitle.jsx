@@ -1,12 +1,18 @@
 "use client";
 
 import { useGSAP } from "@gsap/react";
+import { useLenis } from "@studio-freight/react-lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { usePathname } from "next/navigation";
 import { useRef } from "react";
 
 const PageTitle = ({ title }) => {
   const heroText = useRef();
+  const pathnme = usePathname();
+  useLenis((lenis) => {
+    if (pathnme !== "/projects") lenis.start();
+  });
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
