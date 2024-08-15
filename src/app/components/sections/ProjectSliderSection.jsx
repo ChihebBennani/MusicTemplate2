@@ -6,7 +6,7 @@ import { projects } from "@/app/utils/constants";
 import ProjectSliderItem from "../ProjectSliderItem";
 import "swiper/css";
 import PageTitle from "../PageTitle";
-import { Mousewheel, Parallax } from "swiper/modules";
+import { Keyboard, Mousewheel, Parallax } from "swiper/modules";
 import { useLenis } from "@studio-freight/react-lenis";
 
 const ProjectSliderSection = () => {
@@ -24,8 +24,9 @@ const ProjectSliderSection = () => {
       speed={1000}
       direction="vertical"
       mousewheel={true}
-      modules={[Mousewheel, Parallax]}
+      modules={[Mousewheel, Parallax, Keyboard]}
       parallax={true}
+      keyboard={true}
       followFinger={false}
       preventInteractionOnTransition={true}
       edgeSwipeDetection="prevent"
@@ -42,8 +43,6 @@ const ProjectSliderSection = () => {
         setSwiperMounted(true);
       }}
       onSlideChange={(swiper) => {
-        console.log(swiper);
-
         if (swiper.hostEl.getBoundingClientRect().top === 80) {
           lenis.stop();
         } else {

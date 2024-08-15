@@ -2,7 +2,7 @@ export const menuLinks = [
   { path: "/", lable: "HOME" },
   { path: "/agence", lable: "L ’AGENCE" },
   { path: "/projects", lable: "PROJECTS" },
-  { path: "/services", lable: "SERVICES " },
+  { path: "/news", lable: "NEWS ROOM " },
 ];
 
 export const socialLinks = [
@@ -167,5 +167,44 @@ export const projects = [
     description: "SOCIAL MEDIA MANAGEMENT",
     buttonTitle: "voir",
     imageUrl: "/img/sliders/slider11.jpg",
+  },
+];
+
+export const news = [
+  {
+    title: "Des images hyperréalistes grâce l’IA",
+    description:
+      "Dans un monde où l’information se diffuse aussi vite qu’elle ne se produit, son origine",
+    brand: "Brand Content",
+    imageUrl: "/img/news/news1.jpg",
+  },
+  {
+    title: "AO: Pourquoi connaitre ses concurrents ?",
+    description:
+      "Dans un monde où l’information se diffuse aussi vite qu’elle ne se produit, son origine",
+    brand: "Brand Content",
+    imageUrl: "/img/news/news2.jpg",
+  },
+  {
+    title: "Packaging : emballer à l’heure de l’éco-responsabilité",
+    description:
+      "L’état d’urgence écologique influe sur nos comportements et nous impose des changements. Alors que la",
+    brand: "Brand Content",
+    imageUrl: "/img/news/news3.jpg",
+  },
+  {
+    title:
+      "Comment susciter l’intérêt d’un ado qui a la flemme quand on est une marque ?",
+    description:
+      "Engager l’adolescent est une problématique qui traverse les époques. Si de génération en génération les",
+    brand: "Brand Content",
+    imageUrl: "/img/news/news4.jpg",
+  },
+  {
+    title: "Intégrer un nouveau collaborateur",
+    description:
+      "Visioconférences dans le salon familial, aménagements nouveaux et panique chez les managers avides de suivi…",
+    brand: "Brand Content",
+    imageUrl: "/img/news/news5.jpg",
   },
 ];

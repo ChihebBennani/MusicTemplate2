@@ -13,12 +13,12 @@ const HeroSection = () => {
   const colum2 = useRef();
   const colum3 = useRef();
   const colum4 = useRef();
-
   const { width } = useDimensions();
 
   useGSAP(() => {
     if (colum1.current && colum2.current && colum3.current && colum4.current) {
       gsap.registerPlugin(ScrollTrigger);
+      console.log("test");
       gsap.to(colum1.current, {
         scrollTrigger: {
           trigger: container.current,
@@ -49,7 +49,7 @@ const HeroSection = () => {
         yPercent: -10,
       });
     }
-  }, [container]);
+  }, [container.current, width]);
 
   return (
     <>
