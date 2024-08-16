@@ -15,11 +15,9 @@ const NewsSectionItem = ({
       className={`w-full h-full flex flex-col gap-6 border-b border-zinc-100 py-2 group transition ${containerClasses}`}
       onMouseEnter={() => {
         setHovered(true);
-        console.log("enter");
       }}
       onMouseLeave={() => {
         setHovered(false);
-        console.log("leave");
       }}
     >
       <div className="relative w-full min-h-96 md:min-h-[500px] overflow-hidden">
