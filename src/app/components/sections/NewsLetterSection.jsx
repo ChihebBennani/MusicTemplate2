@@ -20,7 +20,7 @@ const NewsLetterSection = () => {
             placeholder="John@exapmle.com"
           />
           <button className="bg-zinc-900 text-zinc-100 font-bold text-2xl py-2 mt-2">
-            S'INSCRIRE
+            S&apos;INSCRIRE
           </button>
         </form>
       </div>
