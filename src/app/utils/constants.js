@@ -3,6 +3,7 @@ export const menuLinks = [
   { path: "/agence", lable: "L ’AGENCE" },
   { path: "/projects", lable: "PROJECTS" },
   { path: "/news", lable: "NEWS ROOM " },
+  { path: "/contact", lable: "CONTACT" },
 ];
 
 export const socialLinks = [

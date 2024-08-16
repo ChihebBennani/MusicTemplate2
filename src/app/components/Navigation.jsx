@@ -132,7 +132,7 @@ export const Navigation = () => {
               &#x2715;
             </p>
           </div>
-          <nav className="flex-[4]  flex flex-col pt-40 pb-5 md:pb-9 justify-between">
+          <nav className="flex-[4]  flex flex-col pt-28 pb-5 md:pb-9 justify-between">
             <ul className="w-max flex flex-col px-6">
               {menuLinks.map((link, index) => (
                 <li key={index} onClick={toggleMenuOpen}>
